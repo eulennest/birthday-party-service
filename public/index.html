@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Perfekt - Geburtstagsfeier Planung & Dekoration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎉 Party Perfekt</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Deine perfekte Geburtstagsfeier!</h1>
+            <p>Professionelle Planung, kreative Dekoration & unvergessliche Momente</p>
+            <button class="cta-btn" onclick="scrollTo('contact')">Jetzt Anfrage stellen</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Unsere Services</h2>
+            <div class="service-grid" id="serviceList"></div>
+        </div>
+    </section>
+
+    <!-- Deko Shop -->
+    <section class="shop">
+        <div class="container">
+            <h2>Deko-Artikel</h2>
+            <div class="deko-grid">
+                <div class="deko-card">
+                    <div class="icon">🎈</div>
+                    <h3>Ballons</h3>
+                    <p>Premium Ballons in allen Farben & Formen</p>
+                </div>
+                <div class="deko-card">
+                    <div class="icon">✨</div>
+                    <h3>Girlanden & Lichter</h3>
+                    <p>LED-Lichterketten, Papiergirlanden, Banners</p>
+                </div>
+                <div class="deko-card">
+                    <div class="icon">🎊</div>
+                    <h3>Tisch-Deko</h3>
+                    <p>Tischläufer, Servietten, Party-Sets</p>
+                </div>
+                <div class="deko-card">
+                    <div class="icon">🎁</div>
+                    <h3>Thema-Pakete</h3>
+                    <p>Vorgefertigte Deko-Sets für verschiedene Themen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Unsere Werke</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                    <span>Kindergeburtstag</span>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                    <span>Sweet 16</span>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                    <span>Erwachsenen-Party</span>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)">
+                    <span>Outdoor Events</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontakt & Anfrage</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" placeholder="Dein Name" required>
+                <input type="email" name="email" placeholder="E-Mail" required>
+                <textarea name="message" placeholder="Deine Anfrage..." rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Senden</button>
+            </form>
+            <div class="contact-info">
+                <p>📧 kontakt@partyPerfekt.de</p>
+                <p>📱 +49 123 456789</p>
+                <p>📍 Nürnberg, Deutschland</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Party Perfekt. Alle Rechte vorbehalten. 🦉</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
